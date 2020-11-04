@@ -188,14 +188,84 @@ namespace EjerciciosExamen
             }
         }
 
+        // 16. Hacer una función que se le pase un entero e imprima un cuadrado
         public static void ImprimirRectangulo(int n)
         {
             for (int i = 0; i < n; i++)
             {
                 for (int j = 0; j < n; j++)
                     System.Console.Write("*");
-                System.Console.WriteLine("*");
+                    System.Console.WriteLine();
             }
+        }
+
+        // 17. Hacer una función que devuelva el menor de 16 enteros y tiene que ocupar 1 línea
+        public static int MenordeDieciseis(int n1, int n2, int n3, int n4, int n5, int n6, int n7, int n8, int n9, int n10, int n11, int n12, int n13, int n14, int n15, int n16)
+        {
+            return MenordeCuatro(MenordeCuatro(n1, n2, n3, n4), MenordeCuatro(n5, n6, n7, n8), MenordeCuatro(n9, n10, n11, n12), MenordeCuatro(n13, n14, n15, n16));
+        }
+
+        // 18. Hacer una función que imprima un cuadrado de asteriscos y sumas
+        public static void ImprimirCuadrado2(int n)
+        {
+            for (int r = 0; r < n; r++)
+            {
+                for (int c = 0; c < n; c++)
+                {
+                    if ((r % 2) == 0)
+                    System.Console.Write("*");
+                    else 
+                    System.Console.Write("+");
+                }
+                System.Console.WriteLine();
+            }
+        }
+
+        // 19.
+        public static void ImprimirCuadrado3(int n)
+        {
+            for (int r = 0; r < n; r++)
+            {
+                for (int c = 0; c < n; c++)
+                {
+                    int flag = r + c;
+                    if (flag % 2 == 0)
+                    System.Console.Write("*");
+                    else
+                    System.Console.Write("+");
+                }
+                System.Console.WriteLine();
+            }
+        }
+
+        // 20. Hacer una función que imprima medio triangulo
+        public static void ImprimirTirangulo(int n)
+        {
+            for (int r = 0; r < n; r++)
+            {
+                for (int c = 0; c < r + 1; c++)
+                    System.Console.Write("*");
+                    System.Console.WriteLine();
+            }
+           
+        }
+
+        // 21. 
+        public static void ImprimirTiranguloInvert(int n)
+        {
+            for (int r = 0; r < n; r++)
+            {
+                int espacios = n - r - 1;
+                int asteriscos = r + 1;
+
+                for (int c = 0; c < r; c++)
+                {
+                    System.Console.Write();
+                    System.Console.Write();
+                    System.Console.WriteLine();
+                }
+            }
+
         }
     }
 

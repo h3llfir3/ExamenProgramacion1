@@ -18,7 +18,11 @@ namespace EjerciciosExamen
             //EjerciciosExamenT1.ImprimirAsteriscos(10);
             //EjerciciosExamenT1.ImprimirAsteriscosSumas(10);
             // EjerciciosExamenT1.ImprimirPatron1(10);
-            EjerciciosExamenT1.ImprimirRectangulo(10);
+            // EjerciciosExamenT1.ImprimirRectangulo(10);
+            // EjerciciosExamenT1.ImprimirCuadrado2(10);
+            // EjerciciosExamenT1.ImprimirCuadrado3(11);
+            // EjerciciosExamenT1.ImprimirTirangulo(10);
+            EjerciciosExamenT1.ImprimirTiranguloInvert(10);
 
         }
     }
