@@ -17,7 +17,8 @@ namespace EjerciciosExamen
             //EjerciciosExamenT1.ImprimeSerie2(10);
             //EjerciciosExamenT1.ImprimirAsteriscos(10);
             //EjerciciosExamenT1.ImprimirAsteriscosSumas(10);
-            EjerciciosExamenT1.ImprimirPatron1(10);
+            // EjerciciosExamenT1.ImprimirPatron1(10);
+            EjerciciosExamenT1.ImprimirRectangulo(10);
 
         }
     }

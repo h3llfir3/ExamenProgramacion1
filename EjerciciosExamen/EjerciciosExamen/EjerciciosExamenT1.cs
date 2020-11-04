@@ -1,5 +1,6 @@
 ﻿
 using System.Collections;
+using System.Globalization;
 
 namespace EjerciciosExamen
 {
@@ -184,6 +185,16 @@ namespace EjerciciosExamen
                         System.Console.Write("/");
                         break;
                 }
+            }
+        }
+
+        public static void ImprimirRectangulo(int n)
+        {
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < n; j++)
+                    System.Console.Write("*");
+                System.Console.WriteLine("*");
             }
         }
     }
