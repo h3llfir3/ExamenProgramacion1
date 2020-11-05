@@ -260,12 +260,49 @@ namespace EjerciciosExamen
 
                 for (int c = 0; c < r; c++)
                 {
-                    System.Console.Write();
-                    System.Console.Write();
+                    System.Console.Write("*");
+                    System.Console.Write("*");
                     System.Console.WriteLine();
                 }
             }
 
+        }
+
+        public static void PrintNumSeries1(int n)
+        {
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < i; j++)
+                    System.Console.Write(" ");
+                for (int k = 0; k < n - i; k++)
+                    System.Console.Write("*");
+                System.Console.WriteLine();
+            }
+        }
+
+        public static void PrintNumSeries2(int n)
+        {
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < n - i; j++)
+                    System.Console.Write("*");
+                System.Console.WriteLine();
+            }
+        }
+
+        public static void PrinNumSeries3()
+        {
+            for (int i = 1; i < 10; i++)
+            {
+                for (int j = 1; j < 10; j++)
+                {
+                    if (i * j < 10)
+                        System.Console.Write(" ");
+                    System.Console.Write(j * i + " ");
+                }
+                System.Console.WriteLine();
+
+            }
         }
     }
 

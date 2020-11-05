@@ -14,15 +14,18 @@ namespace EjerciciosExamen
             // System.Console.WriteLine(EjerciciosExamenT1.Compare(4, 1));
             // EjerciciosExamenT1.PrintSeries(9);
             // System.Console.WriteLine(EjerciciosExamenT1.MenordeTres(5, 2, 4));
-            //EjerciciosExamenT1.ImprimeSerie2(10);
-            //EjerciciosExamenT1.ImprimirAsteriscos(10);
-            //EjerciciosExamenT1.ImprimirAsteriscosSumas(10);
+            // EjerciciosExamenT1.ImprimeSerie2(10);
+            // EjerciciosExamenT1.ImprimirAsteriscos(10);
+            // EjerciciosExamenT1.ImprimirAsteriscosSumas(10);
             // EjerciciosExamenT1.ImprimirPatron1(10);
             // EjerciciosExamenT1.ImprimirRectangulo(10);
             // EjerciciosExamenT1.ImprimirCuadrado2(10);
             // EjerciciosExamenT1.ImprimirCuadrado3(11);
             // EjerciciosExamenT1.ImprimirTirangulo(10);
-            EjerciciosExamenT1.ImprimirTiranguloInvert(10);
+            // EjerciciosExamenT1.ImprimirTiranguloInvert(10);
+            EjerciciosExamenT1.PrintNumSeries1(10);
+             EjerciciosExamenT1.PrintNumSeries2(10);
+            EjerciciosExamenT1.PrinNumSeries3();
 
         }
     }
