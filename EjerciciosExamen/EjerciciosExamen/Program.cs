@@ -23,10 +23,25 @@ namespace EjerciciosExamen
             // EjerciciosExamenT1.ImprimirCuadrado3(11);
             // EjerciciosExamenT1.ImprimirTirangulo(10);
             // EjerciciosExamenT1.ImprimirTiranguloInvert(10);
-            EjerciciosExamenT1.PrintNumSeries1(10);
-             EjerciciosExamenT1.PrintNumSeries2(10);
-            EjerciciosExamenT1.PrinNumSeries3();
-
+            // EjerciciosExamenT1.PrintNumSeries1(10);
+            // EjerciciosExamenT1.PrintNumSeries2(10);
+            // EjerciciosExamenT1.PrinNumSeries3();
+            // EjerciciosExamenT1.ImprimirPiramide(10);
+            // EjerciciosExamenT1.ImprimirPiramideInversa(10);
+            // EjerciciosExamenT1.ImprimirRombo(10);
+            // System.Console.WriteLine(EjerciciosExamenT1.ElevadoA(4));
+            // EjerciciosExamenT1.Bandera();
+            
+            while (true)
+            {
+                for (int i = 0; i < 20; i++)
+                {
+                    EjerciciosExamenT1.ImprimirTiranguloInvert(i);
+                    EjerciciosExamenT1.PrintNumSeries1(i);
+                    System.Threading.Thread.Sleep(300);
+                    System.Console.Clear();
+                }
+            }
         }
     }
 }

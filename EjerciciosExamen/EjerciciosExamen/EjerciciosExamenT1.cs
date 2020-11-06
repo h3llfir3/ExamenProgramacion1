@@ -258,14 +258,85 @@ namespace EjerciciosExamen
                 int espacios = n - r - 1;
                 int asteriscos = r + 1;
 
-                for (int c = 0; c < r; c++)
-                {
+                for (int c = 0; c < espacios; c++)
+                    System.Console.Write(" ");
+                for (int c = 0; c < asteriscos; c++)
                     System.Console.Write("*");
-                    System.Console.Write("*");
-                    System.Console.WriteLine();
-                }
+                System.Console.WriteLine();
             }
 
+        }
+
+        // 22. 
+        public static void ImprimirPiramide(int n)
+        {
+            for (int r = 0; r < n; r++)
+            {
+                int nEspacios1 = n - r - 1;
+                int nEspacios2 = r * 2;
+                for (int c = 0; c < nEspacios1; c++)
+                    System.Console.Write(" ");
+                System.Console.Write("*");
+                for (int c = 0; c < nEspacios2; c++)
+                    System.Console.Write(" ");
+                System.Console.WriteLine("*");
+                System.Console.WriteLine();
+            }
+        }
+
+        // 23. 
+        public static void ImprimirPiramideInversa(int n)
+        {
+            for (int r = 0; r < n; r++)
+            {
+                int nEspacios1 = (n - r - 1) * 2;
+                int nEspacios2 = r ;
+                for (int c = 0; c < nEspacios2; c++)
+                    System.Console.Write(" ");
+                System.Console.Write("*");
+                for (int c = 0; c < nEspacios1; c++)
+                    System.Console.Write(" ");
+                System.Console.WriteLine("*");
+                System.Console.WriteLine();
+            }
+        }
+
+        // 24. Rombo
+        public static void ImprimirRombo(int n)
+        {
+            EjerciciosExamenT1.ImprimirPiramide(n);
+            EjerciciosExamenT1.ImprimirPiramideInversa(n);
+        }
+
+        // 25. Hacer una funcion que devuelva 2 ^ n (entero)
+        public static int ElevadoA(int n)
+        {
+            int acumulado = 1;
+            for (int i = 0; i < n; i++)
+                acumulado *= 2;
+            return acumulado;
+        }
+
+        // 26. Hacer la bandera de estados unidos
+        public static void Bandera()
+        {
+            for (int r = 0; r < 10; r++)
+            {
+                for (int c = 0; c < 30; c++)
+                    if (c >= 0 && c < 10 && r >= 0 && r <= 3)
+                    {
+                        int flag = r + c;
+                        if ((flag % 2) == 0)
+                            System.Console.Write("+");
+                        else
+                            System.Console.Write(" ");
+                    }
+                    else if (((r / 2) % 2) == 0)
+                        System.Console.Write("*");
+                    else
+                        System.Console.Write(" ");
+                System.Console.WriteLine();
+            }
         }
 
         public static void PrintNumSeries1(int n)
@@ -302,6 +373,15 @@ namespace EjerciciosExamen
                 }
                 System.Console.WriteLine();
 
+            }
+        }
+
+        public static void ImprimeDivisiores(int n)
+        {
+            for (int i = 1; i <= n; i++)
+            {
+                if ((n % i) == 0)
+                    System.Console.Write(i + " ");
             }
         }
     }
