@@ -31,8 +31,9 @@ namespace EjerciciosExamen
             // EjerciciosExamenT1.ImprimirRombo(10);
             // System.Console.WriteLine(EjerciciosExamenT1.ElevadoA(4));
             // EjerciciosExamenT1.Bandera();
+            System.Console.WriteLine(EjerciciosExamenT1.DevSumatorio(10));
             
-            while (true)
+            /* while (true)
             {
                 for (int i = 0; i < 20; i++)
                 {
@@ -42,6 +43,7 @@ namespace EjerciciosExamen
                     System.Console.Clear();
                 }
             }
+            */
         }
     }
 }

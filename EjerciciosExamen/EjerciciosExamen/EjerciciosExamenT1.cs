@@ -384,6 +384,15 @@ namespace EjerciciosExamen
                     System.Console.Write(i + " ");
             }
         }
+
+        // Una función que devuelva el sumatorio de un número
+        public static int DevSumatorio(int n)
+        {
+            int accumulated = 0;
+            for (int i = 0; i < n; i++)
+                accumulated += i;
+            return accumulated;
+        }
     }
 
 }
